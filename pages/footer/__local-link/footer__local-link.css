@@ -1,0 +1,14 @@
+.footer__local-link {
+    font-family: Inter, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer__local-link_color {
+    color: #121212;
+}

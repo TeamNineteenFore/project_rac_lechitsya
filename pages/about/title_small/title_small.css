@@ -1,0 +1,12 @@
+.title_small {
+    font-family: Inter, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.12;
+    /* identical to box height, or 112% */
+    color: #FFFFFF;
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: 60px;
+}
