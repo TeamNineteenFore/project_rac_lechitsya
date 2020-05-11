@@ -1,0 +1,13 @@
+.footer__nav-item {
+    list-style: none;
+    padding-right: 30px;
+    margin-right: 0;
+}
+
+.footer__nav-item_line {
+    display: inline; /* Отображать как строчный элемент */
+}
+
+.footer__nav-item:last-of-type {
+    padding-right: 0;
+}
