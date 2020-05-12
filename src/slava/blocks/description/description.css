@@ -1,0 +1,13 @@
+@import url('./_bold/description_bold.css');
+@import url('./_dim/decription_dim.css');
+@import url('./_invisible/description_invisible.css');
+@import url('./__tell-story/decription__tell-story.css');
+
+.description {
+    max-width: 340px;
+    margin: 0;
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 22px;
+    color: #666;
+  }

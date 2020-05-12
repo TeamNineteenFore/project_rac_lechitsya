@@ -1,0 +1,8 @@
+@import url('./__insta/section-about__insta.css');
+@import url('./__tell-story/section-about__tell-story.css');
+
+.section-about {
+    max-width: 413px;
+    width: 413px;
+    margin: 0;
+  }
