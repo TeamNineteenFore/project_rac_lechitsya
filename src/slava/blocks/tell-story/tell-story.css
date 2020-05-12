@@ -1,0 +1,10 @@
+@import url('./__inner/tell-story__inner.css');
+@import url('./__container/tell-story__container.css');
+@import url('./__options/tell-story__options.css');
+@import url('./__info/tell-story__info.css');
+
+.tell-story {
+    max-width: 1440px;
+    background-color: #f7f7f7;
+    margin: auto;
+  }

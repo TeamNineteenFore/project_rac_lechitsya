@@ -1,0 +1,15 @@
+@import url('./font/font-inter.css');
+@import url('./blocks/banner/banner.css');
+@import url('./blocks/body/body.css');
+@import url('./blocks/insta/insta.css');
+@import url('./blocks/section-about/section-about.css');
+@import url('./blocks/title/title.css');
+@import url('./blocks/link/link.css');
+@import url('./blocks/description/description.css');
+@import url('./blocks/insta-grid/insta-grid.css');
+@import url('./blocks/tell-story/tell-story.css');
+@import url('./blocks/button/button.css');
+
+/* div, svg, section, header, h1, h2, h3, p, img {
+    border: solid 1px red;
+} */

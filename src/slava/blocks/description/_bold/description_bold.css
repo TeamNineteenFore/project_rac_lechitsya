@@ -1,0 +1,9 @@
+.description_bold {
+    font-family: Inter;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+  
+  .description_bold:last-child {
+    margin: 0;
+  }

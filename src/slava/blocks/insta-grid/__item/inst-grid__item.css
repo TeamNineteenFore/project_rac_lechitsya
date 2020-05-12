@@ -1,0 +1,6 @@
+.insta-grid__item {
+    width: 195px;
+    height: 195px;
+    object-fit: cover;
+    background-color: #ededed;
+  }
