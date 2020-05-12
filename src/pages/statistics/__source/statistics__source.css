@@ -1,0 +1,12 @@
+.statistics__source {
+    max-width: 260px;
+    font-family: Inter, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+    text-align: right;
+    color: #666666;
+    /*margin-bottom: 20px;*/
+}

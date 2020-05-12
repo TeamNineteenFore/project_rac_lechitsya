@@ -6,9 +6,46 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Pixel Glass -->
+        <style>
+            HTML {
+                /* Mobile layout by default */
+                background: url("img/320.png") no-repeat 50% 0;
+            }
+            /* Tablet */
+            @media ( min-width: 1280px ) {
+                HTML {
+                    /* Tablet layout */
+                    background-image: url( "image/1280.png" );
+                }
+            }
+            /* Desktop */
+            @media ( min-width: 1440px ) {
+                HTML {
+                    /* Desktop layout */
+                    background-image: url( "image/1440.png" );
+                }
+            }
+        </style>
+        <link href="node_modules/pixel-glass/styles.css" rel="stylesheet">
+        <script src="node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+    <link rel="stylesheet" href="./pages/style.css">
   <title>Рак лечится | Истории</title>
 </head>
+
+
+
 <body>
+<div class="page">
+
+    <!-- =======================================================================-->
+    <div class="space"> <!--заглушка для pixel glass-->
+    </div>
+    <!--    ================================================================================-->
+
+
+
   <div class="main">
 
     <div class="stories">
@@ -87,6 +124,89 @@
       <button class="stories__button">Больше статей</button>
     </div>
 
+
+      <!-- =======================================================================-->
+      <div class="space2"> <!--заглушка для pixel glass-->
+      </div>
+      <!--    ================================================================================-->
+
+
+      <section class="statistics statistics_indent">
+        <h3 class="title">Статистика по онкозаболеваниям</h3>
+        <div class="statistics__items">
+          <div class="statistics__item">
+            <p class="statistics__text">Каждый 3-й в стране уверен, что рак неизлечим. А это примерно 48 918 000 человек.</p>
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <p class="statistics__numbers">1 из 3</p>
+            <p class="statistics__source">Левада-Центр 2018</p>
+          </div>
+          <div class="statistics__item">
+            <p class="statistics__text">2,6% Россиян имеют онкозаболевания.</p>
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <p class="statistics__numbers">3 700 000</p>
+            <p class="statistics__source">Росстат 2018</p>
+          </div>
+          <div class="statistics__item">
+            <p class="statistics__text">На 28% выросла доля выявления заболеваний на ранней стадии за 10 лет.</p>
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <p class="statistics__numbers">↑28%</p>
+            <p class="statistics__source">МНИОИ Герцена 2018</p>
+          </div>
+          <div class="statistics__item">
+            <p class="statistics__text">На 25% снизилась смертность в течение первого года после постановки диагноза.</p>
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <p class="statistics__numbers">↓25%</p>
+            <p class="statistics__source">МНИОИ Герцена 2018</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about about_indent">
+        <div class="about__edges">
+          <h2 class="title title_about">#РАКЛЕЧИТСЯ</h2>
+          <h3 class="title title_small">О проекте</h3>
+          <div class="about__items">
+            <p class="about__text-create">Этот проект был создан благотворительным фондом Константина Хабенского.</p>
+            <div class="about__main">
+              <blockquote class="about__quote">
+                <p class="about__bq">Рак Лечится</p>
+                <cite class="about__cite">Фонд Хабенского</cite>
+              </blockquote>
+              <ul class="about__text-items">
+                <li class="about__text">Есть вещи, которые не лечатся. Особенности характера, страстные увлечения, привычки, ставшие частью нашего «я», фобии, которые мы приобрели в детстве. Список можно продолжать до бесконечности, но одна болезнь в него точно не войдет. Эта болезнь — рак. Рак лечится, и лучшее доказательство — люди с их неизлечимыми особенностями, которые сумели победить рак.</li>
+                <li class="about__text">Рак лечится — проект Благотворительного Фонда Константина Хабенского и Leo Burnett Moscow. С его помощью мы надеемся изменить отношение людей к раку и заставить каждого поверить: онкологическое заболевание — это не приговор.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer footer_indent">
+        <div class="footer__main">
+          <h3 class="footer__thanks">Спасибо всем, кто помог состояться этому проекту</h3>
+          <ul class="footer__nav footer__in-links">
+            <li class="footer__nav-item footer__nav-item_line"><a href="#" class="footer__local-link">Главная</a></li>
+            <li class="footer__nav-item footer__nav-item_line"><a href="#" class="footer__local-link">Истории</a></li>
+          </ul>
+          <ul class="footer__nav footer__out-links">
+            <li class="footer__nav-item footer__nav-item_turn"><a href="#" class="footer__local-link">Мы в Инстаграме и Youtube</a></li>
+            <li class="footer__nav-item footer__nav-item_turn"><a href="#" class="footer__local-link footer__local-link_color">Поделитесь ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__last">Рак Лечится 2020</p>
+          <p class="footer__last">Сделано студентами Яндекс Практикум</p>
+        </div>
+      </section>
   </div>
+</div>
 </body>
 </html>

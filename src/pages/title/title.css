@@ -1,0 +1,14 @@
+.title {
+    padding-left: 60px;
+    padding-top: 100px;
+    margin: 0;
+    text-align: left;
+    max-width: 413px;
+    font-family: Inter, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.12;
+    /* or 112% */
+    color: #000000;
+}
