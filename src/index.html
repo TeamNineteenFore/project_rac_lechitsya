@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,53 @@
   <title>Рак лечится | Истории</title>
 </head>
 
-
-
 <body>
-<div class="page">
+  <div class="page">
+    <header class="header page__header">
+      <div class="header__logo">Проект Благотворительного Фонда Константина Хабенского</div>
+      <nav class="header__navigation">
+        <ul class="header__menu-links">
+          <li><a href="#" class="header__link header__link_active" target="_blank">Главная</a></li>
+          <li><a href="#" class="header__link" target="_blank">Истории</a></li>
+          <li><a href="#" class="header__link" target="_blank">Рассказать историю</a></li>
+        </ul>
+        <img class="header__menu" src="image/header-menu.svg" alt="меню">
+      </nav>
+    </header>
 
-    <!-- =======================================================================-->
-    <div class="space"> <!--заглушка для pixel glass-->
+  <main class="main">
+
+    <div class="cover main__cover">
+      <video class="cover__video">
+        <source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video.ogg" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="video.webm" type='video/webm; codecs="vp8, vorbis"'>
+
+      </video>
+      <h1 class="cover__title">#РАКЛЕЧИТСЯ</h1>
+      <a href="#" class="cover__button"></a>
     </div>
-    <!--    ================================================================================-->
 
+    <div class="video-stories main__video-stories">
+      <h2 class="video-stories__title">Истории людей, победивших рак, но не свои привычки</h2>
+      <p class="video-stories__desription">Есть вещи, которые не лечатся. Вещи ставшие частью нашего «я»,
+        фобии, страхи. Но это точно не рак.
+        Рак лечится. Лучшее доказательство — люди с их историями.</p>
+      <div class="arrow-btns">
+        <button class="arrows-btns__btn arrows-btns__btn-left" type="button" disabled></button>
+        <button class="arrows-btns__btn arrows-btns__btn-right arrows-btns__btn-right_active" type="button"></button>
 
+      </div>
+      <div class="video-stories__video">
 
-  <div class="main">
-
+        <iframe class="video-stories__iframe" src="#" frameborder="0"></iframe>
+        <button class="video-stories__play-button" type="button"></button>
+      </div>
+      <p class="video-stories__caption">Все видео вы можете найте на нашем <a href="#" target="_blank"
+          class="video-stories__caption">YouTube
+          канале.</a></p>
+    </div>
+ 
     <div class="stories">
       <h2 class="stories__title">
         Истории неизлечимых привычек
@@ -123,7 +156,6 @@
 
       <button class="stories__button">Больше статей</button>
     </div>
-
 
       <!-- =======================================================================-->
       <div class="space2"> <!--заглушка для pixel glass-->
