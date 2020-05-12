@@ -1,0 +1,8 @@
+.about__quote {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    align-items: start;
+}
