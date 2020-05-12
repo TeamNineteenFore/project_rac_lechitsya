@@ -20,3 +20,8 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+# Инструкция по загрузке файлов верстки
+Размещайте свои наработки в папке src/temp.
+Каждый блок в отдельную папку.
