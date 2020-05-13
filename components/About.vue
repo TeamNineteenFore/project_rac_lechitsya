@@ -1,7 +1,8 @@
 <template>
-  <section class="about about_indent">
+  <section class="about">
     <div class="about__edges">
-      <h2 class="title title_about">#РАКЛЕЧИТСЯ</h2>
+      <Hashtag>#РАКЛЕЧИТСЯ</Hashtag>
+
       <h3 class="title title_small">О проекте</h3>
       <div class="about__items">
         <p class="about__text-create">
@@ -36,7 +37,12 @@
 </template>
 
 <script>
-export default {};
+import Hashtag from '@/components/ui/Hashtag';
+export default {
+  components: {
+    Hashtag: Hashtag,
+  },
+};
 </script>
 
 <style scoped>
@@ -71,7 +77,7 @@ export default {};
   color: #c9c9c9;
 }
 
-.about__edges {
+.about__inner {
   margin: 0 auto;
   max-width: 1440px;
   padding-bottom: 100px;
