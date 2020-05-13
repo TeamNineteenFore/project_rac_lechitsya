@@ -1,5 +1,7 @@
 <template>
-  <button class="button"></button>
+  <button class="button">
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -10,8 +12,8 @@ export default {};
 .button {
   background-color: #fbfbfb;
   border: none;
+  max-width: 280px;
   width: 100%;
-  height: 52px;
-  margin-bottom: 100px;
+  height: 82px;
 }
 </style>

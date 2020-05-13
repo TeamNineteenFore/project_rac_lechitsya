@@ -19,6 +19,7 @@
           Заполнить подробную форму прямо на сайте и мы опубликуем вашу историю
           после проверки. Пожалуйста, заполняйте все пункты корректно, если вы
           испытаете какие-то сложности, воспользуйтесь 2-м вариантом.
+          <Button>Заполнить форму</Button>
         </Description>
       </div>
     </div>
@@ -28,10 +29,12 @@
 <script>
 import Title from '@/components/ui/Title';
 import Description from '@/components/ui/Description';
+import Button from '@/components/ui/Button';
 export default {
   components: {
     Title: Title,
     Description: Description,
+    Button: Button,
   },
 };
 </script>
@@ -61,6 +64,8 @@ export default {
 .history__description_right {
   max-width: 640px;
   margin-left: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .history__switch {
