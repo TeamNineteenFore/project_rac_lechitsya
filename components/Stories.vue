@@ -1,67 +1,73 @@
 <template>
-  <div class="stories__section">
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Владимир Тен</h3>
-      <p class="card__description">
-        Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-      </p>
-    </div>
+  <div class="stories">
+    <h2 class="stories__title">
+      Истории неизлечимых привычек
+    </h2>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Владимир Познер</h3>
-      <p class="card__description">
-        Я боюсь акул — и, в отличии от рака, это не лечится.
-      </p>
-    </div>
+    <div class="stories__section">
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Владимир Тен</h3>
+        <p class="card__description">
+          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Александр Тарханов</h3>
-      <p class="card__description">
-        Я не могу победить свою пунктуальность в отличии от рака.
-      </p>
-    </div>
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Владимир Познер</h3>
+        <p class="card__description">
+          Я боюсь акул — и, в отличии от рака, это не лечится.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Владимир Тен</h3>
-      <p class="card__description">
-        Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-      </p>
-    </div>
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Александр Тарханов</h3>
+        <p class="card__description">
+          Я не могу победить свою пунктуальность в отличии от рака.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Владимир Тен</h3>
-      <p class="card__description">
-        Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-      </p>
-    </div>
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Владимир Тен</h3>
+        <p class="card__description">
+          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Владимир Познер</h3>
-      <p class="card__description">
-        Я боюсь акул — и, в отличии от рака, это не лечится.
-      </p>
-    </div>
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Владимир Тен</h3>
+        <p class="card__description">
+          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Александр Тарханов</h3>
-      <p class="card__description">
-        Я не могу победить свою пунктуальность в отличии от рака.
-      </p>
-    </div>
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Владимир Познер</h3>
+        <p class="card__description">
+          Я боюсь акул — и, в отличии от рака, это не лечится.
+        </p>
+      </div>
 
-    <div class="card">
-      <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-      <h3 class="card__title">Владимир Тен</h3>
-      <p class="card__description">
-        Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-      </p>
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Александр Тарханов</h3>
+        <p class="card__description">
+          Я не могу победить свою пунктуальность в отличии от рака.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
+        <h3 class="card__title">Владимир Тен</h3>
+        <p class="card__description">
+          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
+        </p>
+      </div>
     </div>
 
     <button class="stories__button">Больше статей</button>
