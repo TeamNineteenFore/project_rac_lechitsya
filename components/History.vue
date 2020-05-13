@@ -18,8 +18,7 @@
           <p class="description description__tell-story">
             Заполнить подробную форму прямо на сайте и мы опубликуем вашу
             историю после проверки. Пожалуйста, заполняйте все пункты корректно,
-            если вы испытаете какие-то сложности, воспользуйтесь &nbsp 2-м
-            вариантом.
+            если вы испытаете какие-то сложности, воспользуйтесь 2-м вариантом.
           </p>
           <p class="description description__tell-story description_invisible">
             Оставить контакт (почту или номер телефона) и мы свяжемся с вами,
@@ -97,6 +96,10 @@ export default {};
   color: #666;
 }
 
+.description__tell-story {
+  max-width: 640px;
+}
+
 .description_bold {
   font-family: Inter;
   font-weight: 500;
@@ -127,6 +130,6 @@ export default {};
 .button__tell-story {
   width: 280px;
   height: 52px;
-  margin: 56px 0 0 0;
+  margin: 76px 0;
 }
 </style>

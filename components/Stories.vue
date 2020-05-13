@@ -107,8 +107,15 @@ export default {};
   background-color: #fbfbfb;
   border: none;
   width: 100%;
-  height: 82px;
+  padding: 31px 0;
   margin-bottom: 100px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .card {

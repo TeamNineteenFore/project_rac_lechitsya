@@ -1,5 +1,5 @@
 <template>
-  <header class="header page__header">
+  <header class="header">
     <h1 class="header__logo">
       Проект Благотворительного Фонда Константина Хабенского
     </h1>
@@ -27,31 +27,22 @@ export default {};
 </script>
 
 <style scoped>
-.page__header {
-  margin: 18px 60px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 1280px) {
-  .page__header {
-    margin: 18px 50px;
-  }
-}
-
-.header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1320px;
-  align-items: center;
-}
-
 .header__logo {
-  width: 340px;
+  max-width: 340px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #121212;
+  padding: 18px 0 18px 60px;
 }
 
 .header__menu-links {
@@ -62,6 +53,7 @@ export default {};
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  padding: 26px 60px;
 }
 
 .header__link {
