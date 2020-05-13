@@ -65,7 +65,7 @@ export default {
 }
 
 .about__title {
-  color: #dedede;
+  color: #fff;
 }
 
 .about__container {
