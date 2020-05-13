@@ -11,7 +11,7 @@ export default {};
   background-color: #fbfbfb;
   border: none;
   width: 100%;
-  height: 82px;
+  height: 52px;
   margin-bottom: 100px;
 }
 </style>

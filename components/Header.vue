@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Links from '@/ui/Links';
+import Links from '@/components/ui/Links';
 export default {
   components: {
     links: Links,
