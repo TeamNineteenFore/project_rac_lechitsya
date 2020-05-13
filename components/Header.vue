@@ -3,27 +3,21 @@
     <h1 class="header__logo">
       Проект Благотворительного Фонда Константина Хабенского
     </h1>
-    <nav class="header__navigation">
-      <ul class="header__menu-links">
-        <li>
-          <a href="#" class="header__link header__link_active" target="_blank"
-            >Главная</a
-          >
-        </li>
-        <li><a href="#" class="header__link" target="_blank">Истории</a></li>
-        <li>
-          <a href="#" class="header__link" target="_blank"
-            >Рассказать историю</a
-          >
-        </li>
-      </ul>
-      <img class="header__menu" src="image/header-menu.svg" alt="меню" />
-    </nav>
+    <div class="header__navigation">
+      <links />
+      <button class="header__button" type="button">Рассказать историю</button>
+    </div>
+    <img class="header__menu" src="image/header-menu.svg" alt="меню" />
   </header>
 </template>
 
 <script>
-export default {};
+import Links from '@/ui/Links';
+export default {
+  components: {
+    links: Links,
+  },
+};
 </script>
 
 <style scoped>
@@ -56,20 +50,25 @@ export default {};
   padding: 26px 60px;
 }
 
-.header__link {
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 24px;
-  margin-right: 18px;
-  color: #121212;
-}
-
-.header__link_active {
-  text-decoration-line: underline;
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__menu {
   display: none;
+}
+
+.header__button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 18px;
+  color: #121212;
 }
 
 @media screen and (max-width: 768px) {
