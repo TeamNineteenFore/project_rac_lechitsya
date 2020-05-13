@@ -19,7 +19,7 @@
           Заполнить подробную форму прямо на сайте и мы опубликуем вашу историю
           после проверки. Пожалуйста, заполняйте все пункты корректно, если вы
           испытаете какие-то сложности, воспользуйтесь 2-м вариантом.
-          <Button>Заполнить форму</Button>
+          <VioletButton class="history__button">Заполнить форму</VioletButton>
         </Description>
       </div>
     </div>
@@ -29,12 +29,12 @@
 <script>
 import Title from '@/components/ui/Title';
 import Description from '@/components/ui/Description';
-import Button from '@/components/ui/Button';
+import VioletButton from '@/components/ui/VioletButton';
 export default {
   components: {
     Title: Title,
     Description: Description,
-    Button: Button,
+    VioletButton: VioletButton,
   },
 };
 </script>
@@ -86,5 +86,9 @@ export default {
 .history__click_active {
   color: #000000;
   font-weight: 500;
+}
+
+.history__button {
+  margin-top: 95px;
 }
 </style>
