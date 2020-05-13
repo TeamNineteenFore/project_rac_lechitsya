@@ -21,6 +21,7 @@ import Insta from '@/components/Insta';
 import History from '@/components/History';
 import Statistics from '@/components/Statistics';
 import About from '@/components/About';
+
 export default {
   components: {
     cover: Cover,
