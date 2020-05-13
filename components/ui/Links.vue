@@ -1,7 +1,7 @@
 <template>
   <nav class="menu">
-    <a href="#" class="menu__link menu__link_active" target="_blank">Главная</a>
-    <a href="#" class="menu__link" target="_blank">Истории</a>
+    <a href="#" class="menu__link menu__link_active">Главная</a>
+    <a href="#" class="menu__link">Истории</a>
   </nav>
 </template>
 
