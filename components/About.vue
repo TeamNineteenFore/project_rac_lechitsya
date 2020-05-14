@@ -1,8 +1,9 @@
 <template>
   <section class="about">
     <div class="about__inner">
-      <Hashtag class="about__hashtag">#РАКЛЕЧИТСЯ</Hashtag>
-
+      <h2 class="about__header">
+        <Hashtag class="about__hashtag">#РАКЛЕЧИТСЯ</Hashtag>
+      </h2>
       <Title class="about__title">О проекте</Title>
 
       <div class="about__container">
@@ -54,14 +55,16 @@ export default {
   color: #fff;
 }
 
+.about__header {
+  text-align: center;
+  padding-bottom: 70px;
+  font-size: 64px;
+  line-height: 77px;
+}
 .about__inner {
   max-width: 1320px;
   margin: 0 auto;
   padding: 100px 0;
-}
-
-.about__hashtag {
-  padding-bottom: 70px;
 }
 
 .about__title {
