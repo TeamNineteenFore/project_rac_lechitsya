@@ -1,7 +1,7 @@
 <template>
-  <h6 class="hashtag">
+  <span class="hashtag">
     <slot></slot>
-  </h6>
+  </span>
 </template>
 
 <script>
@@ -10,11 +10,6 @@ export default {};
 
 <style scoped>
 .hashtag {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 77px;
   text-align: center;
   color: #ffffff;
 }

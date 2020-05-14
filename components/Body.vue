@@ -1,8 +1,8 @@
 <template>
   <div>
     <cover />
-    <video-stories class="video-stories" />
-    <strap />
+    <video-stories />
+    <strap>и в отличие от рака,</strap>
     <stories />
     <strap />
     <insta />
@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-.video-stories {
+/* .video-stories {
   margin: 100px auto;
-}
+} */
 </style>

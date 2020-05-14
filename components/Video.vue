@@ -39,6 +39,7 @@ export default {};
 <style scoped>
 .video-stories {
   max-width: 1340px;
+  margin: 100px auto;
   display: grid;
   grid-template-columns: minmax(0, 413px) minmax(0, 867px);
   grid-template-rows: repeat(4, auto);

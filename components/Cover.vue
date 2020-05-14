@@ -1,7 +1,7 @@
 <template>
   <div class="cover main__cover">
     <cover-video />
-    <hashtag class="cover__title">#РАКЛЕЧИТСЯ</hashtag>
+    <h2><hashtag class="cover__title">#РАКЛЕЧИТСЯ</hashtag></h2>
     <a href="#" class="cover__button"></a>
   </div>
 </template>

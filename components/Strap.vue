@@ -1,13 +1,20 @@
 <template>
   <section class="banner">
     <h2 class="banner__text">
-      и в отличие от рака, <span class="banner__text_bold">#этонелечится</span>
+      <slot>Текст по умолчанию</slot
+      ><hashtag class="banner__text_bold">#этонелечится</hashtag>
     </h2>
   </section>
 </template>
 
 <script>
-export default {};
+import Hashtag from '@/components/ui/Hashtag';
+
+export default {
+  components: {
+    hashtag: Hashtag,
+  },
+};
 </script>
 
 <style scoped>
@@ -20,6 +27,7 @@ export default {};
 }
 
 .banner__text {
+  display: inline-block;
   max-width: 750px;
   margin: 20px auto;
   font-family: Inter;
