@@ -5,32 +5,30 @@
         href="https://www.instagram.com/raklechitsa/"
         target="_blank"
         class="link"
-        ><h2 class="title">Инстаграм</h2></a
+        ><Title class="title">Инстаграм</Title></a
       >
-      <p class="description">
+      <Description>
         Два раза в неделю мы просматриваем все посты по хештегу #этонелечится.
         Все истории, где нет нецензурных выражений и запрещенного контента
         попадают сюда. Следите за правильным написанием хештега, чтобы мы не
         пропустили вашу историю.
-      </p>
+      </Description>
     </div>
-    <div class="insta-grid">
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-      <div class="insta-grid__item"></div>
-    </div>
+    <insta-grid />
   </section>
 </template>
 
 <script>
 import Title from '@/components/ui/Title';
 import Description from '@/components/ui/Description';
-export default {};
+import InstaGrid from '@/components/ui/InstaGrid';
+export default {
+  components: {
+    Title,
+    Description,
+    'insta-grid': InstaGrid,
+  },
+};
 </script>
 
 <style scoped>
@@ -51,32 +49,12 @@ export default {};
   margin: 0 37px 0 0;
 }
 
-.insta-grid {
-  margin: 0;
-  display: grid;
-  grid-gap: 30px;
-  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-  justify-content: center;
-}
-
-.insta-grid__item {
-  width: 195px;
-  height: 195px;
-  object-fit: cover;
-  background-color: #ededed;
-}
-
 .link {
   color: #000;
 }
 
 .title {
-  font-family: Inter;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 36px;
   margin: 0 0 32px 0;
-  color: #000;
   max-width: 413px;
 }
 </style>
