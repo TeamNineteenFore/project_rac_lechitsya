@@ -4,7 +4,7 @@
     <video-stories />
     <strap>и в отличие от рака,</strap>
     <stories />
-    <strap />
+    <strap>рассказывайте ваши истории в инстаграмм</strap>
     <insta />
     <history />
     <statistics />
