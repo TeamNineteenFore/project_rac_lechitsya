@@ -10,7 +10,7 @@ export default {};
 
 <style scoped>
 .description {
-  font-family: Inter;
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

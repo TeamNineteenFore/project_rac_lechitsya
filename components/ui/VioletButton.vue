@@ -13,7 +13,7 @@ export default {};
   max-width: 280px;
   width: 100%;
   height: 52px;
-  font-family: Inter;
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

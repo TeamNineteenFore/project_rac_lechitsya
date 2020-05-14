@@ -27,7 +27,7 @@ export default {
 }
 
 .card__title {
-  font-family: Inter;
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -37,7 +37,7 @@ export default {
 }
 
 .card__description {
-  font-family: Inter;
+  font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
