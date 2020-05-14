@@ -1,73 +1,16 @@
 <template>
   <div class="stories">
-    <h2 class="stories__title">
+    <Title class="stories__title">
       Истории неизлечимых привычек
-    </h2>
+    </Title>
 
     <div class="stories__section">
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Владимир Тен</h3>
-        <p class="card__description">
-          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Владимир Познер</h3>
-        <p class="card__description">
-          Я боюсь акул — и, в отличии от рака, это не лечится.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Александр Тарханов</h3>
-        <p class="card__description">
-          Я не могу победить свою пунктуальность в отличии от рака.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Владимир Тен</h3>
-        <p class="card__description">
-          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Владимир Тен</h3>
-        <p class="card__description">
-          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Владимир Познер</h3>
-        <p class="card__description">
-          Я боюсь акул — и, в отличии от рака, это не лечится.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Александр Тарханов</h3>
-        <p class="card__description">
-          Я не могу победить свою пунктуальность в отличии от рака.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="../src/image/photo.jpg" alt="Photo" class="card__image" />
-        <h3 class="card__title">Владимир Тен</h3>
-        <p class="card__description">
-          Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.
-        </p>
-      </div>
+      <Card
+        v-for="card in Cards"
+        :key="card.id"
+        :name="card.name"
+        :quote="card.quote"
+      />
     </div>
 
     <button class="stories__button">Больше статей</button>
@@ -75,7 +18,63 @@
 </template>
 
 <script>
-export default {};
+import Title from '@/components/ui/Title';
+import Card from '@/components/ui/Card';
+export default {
+  components: {
+    Card: Card,
+    Title: Title,
+  },
+  data() {
+    return {
+      Cards: [
+        {
+          id: 1,
+          name: 'Владимир Тен',
+          quote:
+            'Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.',
+        },
+        {
+          id: 2,
+          name: 'Владимир Познер',
+          quote: 'Я боюсь акул — и, в отличии от рака, это не лечится.',
+        },
+        {
+          id: 3,
+          name: 'Александр Тарханов',
+          quote: 'Я не могу победить свою пунктуальность в отличии от рака.',
+        },
+        {
+          id: 1,
+          name: 'Владимир Тен',
+          quote:
+            'Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.',
+        },
+        {
+          id: 2,
+          name: 'Владимир Познер',
+          quote: 'Я боюсь акул — и, в отличии от рака, это не лечится.',
+        },
+        {
+          id: 3,
+          name: 'Александр Тарханов',
+          quote: 'Я не могу победить свою пунктуальность в отличии от рака.',
+        },
+        {
+          id: 1,
+          name: 'Владимир Тен',
+          quote:
+            'Я всегда читаю книги с конца, - и это не лечится, в отличие от рака.',
+        },
+        {
+          id: 2,
+          name: 'Владимир Познер',
+          quote: 'Я боюсь акул — и, в отличии от рака, это не лечится.',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -84,13 +83,6 @@ export default {};
 }
 
 .stories__title {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 112%;
-  color: #000000;
-  max-width: 413px;
   padding: 100px 0 70px;
 }
 
@@ -116,34 +108,5 @@ export default {};
   line-height: 20px;
   display: flex;
   justify-content: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-}
-
-.card__image {
-  width: 100%;
-}
-
-.card__title {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 100%;
-  color: #000000;
-  padding: 20px 0 14px;
-}
-
-.card__description {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 129%;
-  color: #666666;
-  max-width: 250px;
 }
 </style>

@@ -113,7 +113,7 @@ export default {};
   width: 40px;
   height: 40px;
   border: none;
-  background-color: #ededed;
+  background-color: #fbfbfb;
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
