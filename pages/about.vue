@@ -1,18 +1,27 @@
 <template>
   <div class="about">
-    Hello About
+    <h2 class="title">Истории</h2>
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {};
+import Footer from '@/components/Footer';
+export default {
+  components: {
+    Footer: Footer,
+  },
+};
 </script>
 
 <style scoped>
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.title {
+  margin-top: 20vh;
+  text-align: center;
+  height: 35vh;
 }
 </style>

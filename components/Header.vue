@@ -5,7 +5,11 @@
     </h1>
     <div class="header__navigation">
       <links />
-      <button class="header__button" type="button">Рассказать историю</button>
+      <button class="header__button" type="button">
+        <nuxt-link to="/story" class="header__button"
+          >Рассказать историю</nuxt-link
+        >
+      </button>
     </div>
     <img class="header__menu" src="image/header-menu.svg" alt="меню" />
   </header>

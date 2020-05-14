@@ -1,20 +1,28 @@
 <template>
   <section class="footer footer_indent">
     <div class="footer__main">
-      <h3 class="footer__thanks">
+      <Title class="footer__thanks">
         Спасибо всем, кто помог состояться этому проекту
-      </h3>
-      <ul class="footer__nav footer__in-links">
-        <li class="footer__nav-item footer__nav-item_line">
-          <a href="#" class="footer__local-link">Главная</a>
-        </li>
-        <li class="footer__nav-item footer__nav-item_line">
-          <a href="#" class="footer__local-link">Истории</a>
-        </li>
-      </ul>
+      </Title>
+      <Links />
       <ul class="footer__nav footer__out-links">
         <li class="footer__nav-item footer__nav-item_turn">
-          <a href="#" class="footer__local-link">Мы в Инстаграме и Youtube</a>
+          <p>
+            Мы в
+            <a
+              href="https://www.instagram.com/raklechitsa/"
+              class="footer__local-link"
+              target="_blank"
+              >Инстаграме</a
+            >
+            и
+            <a
+              href="https://www.youtube.com/channel/UCcxMSzN1R4JfW1vLu3swCaQ"
+              class="footer__local-link"
+              target="_blank"
+              >Youtube</a
+            >
+          </p>
         </li>
         <li class="footer__nav-item footer__nav-item_turn">
           <a href="#" class="footer__local-link footer__local-link_color"
@@ -31,7 +39,14 @@
 </template>
 
 <script>
-export default {};
+import Title from '@/components/ui/Title';
+import Links from '@/components/ui/Links';
+export default {
+  components: {
+    Title: Title,
+    Links: Links,
+  },
+};
 </script>
 
 <style scoped>
@@ -44,7 +59,7 @@ export default {};
 }
 
 .footer__bottom {
-  margin: 0 60px 60px 60px;
+  padding: 0 60px 60px 60px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -61,7 +76,6 @@ export default {};
   font-weight: normal;
   font-size: 18px;
   line-height: 1;
-  /* identical to box height, or 100% */
   color: #898989;
 }
 
@@ -71,9 +85,12 @@ export default {};
   font-weight: normal;
   font-size: 18px;
   line-height: 1.33;
-  /* identical to box height, or 133% */
   color: #000000;
   text-decoration: none;
+}
+
+.footer__local-link:hover {
+  border-bottom: 2px solid #000;
 }
 
 .footer__local-link_color {
@@ -81,7 +98,7 @@ export default {};
 }
 
 .footer__main {
-  margin: 65px 60px 90px 60px;
+  padding: 65px 60px 90px 60px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -123,14 +140,7 @@ export default {};
 
 .footer__thanks {
   max-width: 340px;
-  font-family: Inter, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.12;
-  /* or 112% */
-  color: #000000;
-  margin: 0 auto auto 0;
+  margin: 0 113px auto 0;
 }
 
 .footer_indent {

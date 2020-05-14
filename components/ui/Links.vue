@@ -1,7 +1,11 @@
 <template>
   <nav class="menu">
-    <a href="#" class="menu__link menu__link_active">Главная</a>
-    <a href="#" class="menu__link">Истории</a>
+    <nuxt-link to="/" class="menu__link" active-class="menu__link_active" exact>
+      <span>Главная</span>
+    </nuxt-link>
+    <nuxt-link to="/about" class="menu__link" active-class="menu__link_active">
+      <span>Истории</span>
+    </nuxt-link>
   </nav>
 </template>
 
@@ -19,6 +23,6 @@ export default {};
 }
 
 .menu__link_active {
-  text-decoration-line: underline;
+  border-bottom: #121212 2px solid;
 }
 </style>
