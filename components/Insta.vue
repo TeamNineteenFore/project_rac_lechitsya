@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import Title from '@/components/ui/Title';
+import Description from '@/components/ui/Description';
 export default {};
 </script>
 

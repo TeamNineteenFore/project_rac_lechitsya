@@ -36,8 +36,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* .video-stories {
-  margin: 100px auto;
-} */
-</style>
+<style scoped></style>
