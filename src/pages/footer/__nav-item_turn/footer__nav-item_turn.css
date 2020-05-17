@@ -1,8 +1,0 @@
-.footer__nav-item_turn {
-    display: block;
-    margin-bottom: 44px;
-}
-
-.footer__nav-item_turn:last-of-type {
-    margin-bottom: 0;
-}

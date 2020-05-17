@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <img
-      src="../../static/images/card__photo-default.jpg"
+      src="~/assets/images/card__photo-default.jpg"
       alt="Photo"
       class="card__image"
     />
@@ -12,7 +12,10 @@
 
 <script>
 export default {
-  props: ['name', 'quote'],
+  props: {
+    name: String,
+    quote: String,
+  },
 };
 </script>
 

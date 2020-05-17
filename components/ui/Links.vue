@@ -3,7 +3,11 @@
     <nuxt-link to="/" class="menu__link" active-class="menu__link_active" exact>
       <span>Главная</span>
     </nuxt-link>
-    <nuxt-link to="/about" class="menu__link" active-class="menu__link_active">
+    <nuxt-link
+      to="/stories"
+      class="menu__link"
+      active-class="menu__link_active"
+    >
       <span>Истории</span>
     </nuxt-link>
   </nav>

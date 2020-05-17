@@ -133,21 +133,21 @@ export default {
 }
 
 .arrows-btns__btn-right {
-  background-image: url('../assets/images/arrow-right.svg');
+  background-image: url('~assets/images/arrow-right.svg');
   grid-area: button-right;
 }
 
 .arrows-btns__btn-left {
-  background-image: url('../assets/images/arrow-left.svg');
+  background-image: url('~assets/images/arrow-left.svg');
   grid-area: button-left;
 }
 
 .arrows-btns__btn-right_active {
-  background-image: url('../assets/images/arrow-right_active.svg');
+  background-image: url('~assets/images/arrow-right_active.svg');
 }
 
 .arrows-btns__btn-left_active {
-  background-image: url('../assets/images/arrow-left_active.svg');
+  background-image: url('~assets/images/arrow-left_active.svg');
 }
 
 @media screen and (max-width: 1280px) {

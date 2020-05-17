@@ -1,7 +1,0 @@
-.statistics__items {
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 70px 60px 100px 60px;
-    margin: 0;
-}

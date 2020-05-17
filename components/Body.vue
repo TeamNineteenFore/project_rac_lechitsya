@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <cover />
-    <video-stories />
-    <strap>и в отличие от рака,</strap>
-    <stories />
-    <strap>рассказывайте ваши истории в инстаграмм</strap>
-    <insta />
-    <history />
-    <statistics />
-    <about />
+  <div class="page">
+    <Cover />
+    <Video />
+    <Strap>и в отличие от рака,</Strap>
+    <Stories />
+    <Strap>рассказывайте ваши истории в инстаграмм</Strap>
+    <Insta />
+    <History />
+    <Statistics />
+    <About />
   </div>
 </template>
 
@@ -24,16 +24,20 @@ import About from '@/components/About';
 
 export default {
   components: {
-    cover: Cover,
-    'video-stories': Video,
-    strap: Strap,
-    stories: Stories,
-    insta: Insta,
-    history: History,
-    statistics: Statistics,
-    about: About,
+    Cover,
+    Video,
+    Strap,
+    Stories,
+    Insta,
+    History,
+    Statistics,
+    About,
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.page {
+  margin: 0 auto;
+}
+</style>

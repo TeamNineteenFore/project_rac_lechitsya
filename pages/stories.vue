@@ -1,21 +1,20 @@
 <template>
-  <div class="about">
+  <Container>
     <h2 class="title">Истории</h2>
-    <Footer />
-  </div>
+  </Container>
 </template>
 
 <script>
-import Footer from '@/components/Footer';
+import Container from '@/components/Container';
 export default {
   components: {
-    Footer: Footer,
+    Container,
   },
 };
 </script>
 
 <style scoped>
-.about {
+.stories {
   max-width: 1440px;
   margin: 0 auto;
 }
