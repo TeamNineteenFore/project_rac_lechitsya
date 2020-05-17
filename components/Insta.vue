@@ -1,7 +1,7 @@
 <template>
   <Container>
-    <div class="insta__inner">
-      <div class="section-about section-about__insta">
+    <div class="insta">
+      <div class="insta__about">
         <a
           href="https://www.instagram.com/raklechitsa/"
           target="_blank"
@@ -36,19 +36,15 @@ export default {
 </script>
 
 <style scoped>
-.insta__inner {
+.insta {
   margin: auto;
   display: flex;
   padding: 100px 0;
 }
 
-.section-about {
+.insta__about {
   max-width: 413px;
   width: 413px;
-  margin: 0;
-}
-
-.section-about.section-about__insta {
   margin: 0 37px 0 0;
 }
 
