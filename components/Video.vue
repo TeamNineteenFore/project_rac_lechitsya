@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <div class="video-stories">
+    <div class="video-stories" id="video-stories">
       <h2 class="video-stories__title">
         Истории людей, победивших рак, но не свои привычки
       </h2>

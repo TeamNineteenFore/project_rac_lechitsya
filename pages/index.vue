@@ -1,18 +1,20 @@
 <template>
   <div class="page">
-    <main-body />
-    <main-footer />
+    <Body />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Body from '@/components/Body';
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 export default {
   components: {
-    'main-body': Body,
-    'main-footer': Footer,
+    Header,
+    Body,
+    Footer,
   },
   data() {
     return {

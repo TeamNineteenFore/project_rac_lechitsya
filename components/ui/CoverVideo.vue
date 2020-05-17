@@ -11,10 +11,7 @@ export default {};
 </script>
 
 <style scoped>
-.cover__video {
-  background-color: #613a93;
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.cover {
+  margin: 0 auto;
 }
 </style>

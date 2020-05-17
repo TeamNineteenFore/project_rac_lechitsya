@@ -1,55 +1,60 @@
 <template>
-  <div class="cover">
-    <cover-video />
-    <h2><hashtag class="cover__title">#РАКЛЕЧИТСЯ</hashtag></h2>
-    <a href="#" class="cover__button"></a>
-  </div>
+  <section class="cover">
+    <Container>
+      <div class="cover__inner">
+        <span></span>
+        <Hashtag class="cover__title">#РАКЛЕЧИТСЯ</Hashtag>
+        <a href="#video-stories" class="cover__button"></a>
+      </div>
+    </Container>
+  </section>
 </template>
 
 <script>
 import Hashtag from '@/components/ui/Hashtag';
-import CoverVideo from '@/components/ui/CoverVideo';
-
+import Container from '@/components/Container';
 export default {
   components: {
-    hashtag: Hashtag,
-    'cover-video': CoverVideo,
+    Hashtag,
+    Container,
   },
 };
 </script>
 
 <style scoped>
 .cover {
-  position: relative;
+  background-color: #613a93;
 }
 
+.cover__inner {
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .cover__title {
-  position: absolute;
   font-size: 92px;
   line-height: 111px;
   color: #ffffff;
   font-weight: 800;
   text-align: center;
-  width: 718px;
-  top: calc(50% - 55.5px);
-  left: calc(50% - 359px);
+  max-width: 718px;
   z-index: 1;
 }
 
 .cover__button {
-  /* background-image: url("image/cover-button.svg"); */
-  background-image: url('../src/image/cover-button.svg');
+  background-image: url('../assets/images/cover-button.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
   width: 36px;
   height: 12px;
   bottom: 40px;
-  left: calc(50% - 18px);
   border: none;
   cursor: pointer;
   z-index: 1;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1280px) {
