@@ -2,11 +2,11 @@
   <section class="footer">
     <Container>
       <div class="footer__main">
-        <Title class="footer__thanks">
+        <Title class="footer__menu">
           Спасибо всем, кто помог состояться этому проекту
         </Title>
         <Links />
-        <ul class="footer__nav footer__out-links">
+        <ul class="footer__out-links">
           <li class="footer__nav-item footer__nav-item_turn">
             <p>
               Мы в
@@ -27,14 +27,21 @@
           </li>
           <li class="footer__nav-item footer__nav-item_turn">
             <a href="#" class="footer__local-link footer__local-link_color"
-              >Поделитесь ↗</a
+              >Поделитесь &#8599;</a
             >
           </li>
         </ul>
       </div>
       <div class="footer__bottom">
-        <p class="footer__last">Рак Лечится 2020</p>
-        <p class="footer__last">Сделано студентами Яндекс Практикум</p>
+        <p class="footer__copyright">
+          Рак Лечится {{ new Date().getFullYear() }}
+        </p>
+        <p class="footer__copyright">
+          Сделано студентами
+          <a href="https://praktikum.yandex.ru/" class="footer__copyright-link"
+            >Яндекс Практикум</a
+          >
+        </p>
       </div>
     </Container>
   </section>
@@ -77,7 +84,7 @@ export default {
   margin: 0 auto 0 -70px;
 }
 
-.footer__last {
+.footer__copyright {
   font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -86,13 +93,27 @@ export default {
   color: #898989;
 }
 
+.footer__copyright-link {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #898989;
+  text-decoration: none;
+}
+
+.footer__copyright-link:hover {
+  border-bottom: 2px solid #898989;
+}
+
 .footer__local-link {
   font-family: Inter, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.33;
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
@@ -101,7 +122,7 @@ export default {
 }
 
 .footer__local-link_color {
-  color: #121212;
+  color: #121;
 }
 
 .footer__nav-item {
@@ -138,7 +159,7 @@ export default {
   width: 300px;
 }
 
-.footer__thanks {
+.footer__menu {
   max-width: 340px;
   margin: 0 113px auto 0;
 }
