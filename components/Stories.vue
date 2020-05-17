@@ -1,29 +1,33 @@
 <template>
-  <div class="stories">
-    <Title class="stories__title">
-      Истории неизлечимых привычек
-    </Title>
+  <Container>
+    <section class="stories">
+      <Title class="stories__title">
+        Истории неизлечимых привычек
+      </Title>
 
-    <div class="stories__section">
-      <Card
-        v-for="card in Cards"
-        :key="card.id"
-        :name="card.name"
-        :quote="card.quote"
-      />
-    </div>
+      <div class="stories__section">
+        <Card
+          v-for="card in Cards"
+          :key="card.id"
+          :name="card.name"
+          :quote="card.quote"
+        />
+      </div>
 
-    <button class="stories__button">Больше статей</button>
-  </div>
+      <button class="stories__button">Больше статей</button>
+    </section>
+  </Container>
 </template>
 
 <script>
 import Title from '@/components/ui/Title';
 import Card from '@/components/ui/Card';
+import Container from '@/components/Container';
 export default {
   components: {
-    Card: Card,
-    Title: Title,
+    Card,
+    Title,
+    Container,
   },
   data() {
     return {
@@ -79,11 +83,11 @@ export default {
 
 <style scoped>
 .stories {
-  padding: 0 60px;
+  padding: 100px 0;
 }
 
 .stories__title {
-  padding: 100px 0 70px;
+  padding-bottom: 70px;
 }
 
 .stories__section {
@@ -100,7 +104,6 @@ export default {
   border: none;
   width: 100%;
   padding: 31px 0;
-  margin-bottom: 100px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;

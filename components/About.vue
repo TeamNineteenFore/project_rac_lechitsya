@@ -1,11 +1,10 @@
 <template>
   <section class="about">
-    <div class="about__inner">
+    <Container>
       <h2 class="about__header">
         <Hashtag class="about__hashtag">#РАКЛЕЧИТСЯ</Hashtag>
       </h2>
       <Title class="about__title">О проекте</Title>
-
       <div class="about__container">
         <Description class="about__description_left">
           Этот проект был создан благотворительным фондом Константина
@@ -30,7 +29,7 @@
           не приговор.
         </Description>
       </div>
-    </div>
+    </Container>
   </section>
 </template>
 
@@ -38,21 +37,22 @@
 import Hashtag from '@/components/ui/Hashtag';
 import Title from '@/components/ui/Title';
 import Description from '@/components/ui/Description';
+import Container from '@/components/Container';
 export default {
   components: {
-    Hashtag: Hashtag,
-    Title: Title,
-    Description: Description,
+    Hashtag,
+    Title,
+    Description,
+    Container,
   },
 };
 </script>
 
 <style scoped>
 .about {
-  max-width: 1440px;
   background-color: #613a93;
-  margin: 0 auto;
   color: #fff;
+  padding: 100px 0;
 }
 
 .about__header {
@@ -60,11 +60,6 @@ export default {
   padding-bottom: 70px;
   font-size: 64px;
   line-height: 77px;
-}
-.about__inner {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 100px 0;
 }
 
 .about__title {
@@ -97,7 +92,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 145px;
+  margin-left: 140px;
 }
 
 .about__click {

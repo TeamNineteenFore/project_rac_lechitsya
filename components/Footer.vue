@@ -1,50 +1,54 @@
 <template>
-  <section class="footer footer_indent">
-    <div class="footer__main">
-      <Title class="footer__thanks">
-        Спасибо всем, кто помог состояться этому проекту
-      </Title>
-      <Links />
-      <ul class="footer__nav footer__out-links">
-        <li class="footer__nav-item footer__nav-item_turn">
-          <p>
-            Мы в
-            <a
-              href="https://www.instagram.com/raklechitsa/"
-              class="footer__local-link"
-              target="_blank"
-              >Инстаграме</a
+  <section class="footer">
+    <Container>
+      <div class="footer__main">
+        <Title class="footer__thanks">
+          Спасибо всем, кто помог состояться этому проекту
+        </Title>
+        <Links />
+        <ul class="footer__nav footer__out-links">
+          <li class="footer__nav-item footer__nav-item_turn">
+            <p>
+              Мы в
+              <a
+                href="https://www.instagram.com/raklechitsa/"
+                class="footer__local-link"
+                target="_blank"
+                >Инстаграме</a
+              >
+              и
+              <a
+                href="https://www.youtube.com/channel/UCcxMSzN1R4JfW1vLu3swCaQ"
+                class="footer__local-link"
+                target="_blank"
+                >Youtube</a
+              >
+            </p>
+          </li>
+          <li class="footer__nav-item footer__nav-item_turn">
+            <a href="#" class="footer__local-link footer__local-link_color"
+              >Поделитесь ↗</a
             >
-            и
-            <a
-              href="https://www.youtube.com/channel/UCcxMSzN1R4JfW1vLu3swCaQ"
-              class="footer__local-link"
-              target="_blank"
-              >Youtube</a
-            >
-          </p>
-        </li>
-        <li class="footer__nav-item footer__nav-item_turn">
-          <a href="#" class="footer__local-link footer__local-link_color"
-            >Поделитесь ↗</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="footer__bottom">
-      <p class="footer__last">Рак Лечится 2020</p>
-      <p class="footer__last">Сделано студентами Яндекс Практикум</p>
-    </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__last">Рак Лечится 2020</p>
+        <p class="footer__last">Сделано студентами Яндекс Практикум</p>
+      </div>
+    </Container>
   </section>
 </template>
 
 <script>
 import Title from '@/components/ui/Title';
 import Links from '@/components/ui/Links';
+import Container from '@/components/Container';
 export default {
   components: {
-    Title: Title,
-    Links: Links,
+    Title,
+    Links,
+    Container,
   },
 };
 </script>
@@ -52,14 +56,17 @@ export default {
 <style scoped>
 .footer {
   background-color: #fbfbfb;
-  max-width: 1440px;
-  /* выше установили ограничение по максимальной ширине */
-  width: 100%;
-  max-height: 356px;
+}
+
+.footer__main {
+  padding: 65px 0 90px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 }
 
 .footer__bottom {
-  padding: 0 60px 60px 60px;
+  padding-bottom: 60px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -95,13 +102,6 @@ export default {
 
 .footer__local-link_color {
   color: #121212;
-}
-
-.footer__main {
-  padding: 65px 60px 90px 60px;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
 }
 
 .footer__nav-item {
@@ -141,10 +141,5 @@ export default {
 .footer__thanks {
   max-width: 340px;
   margin: 0 113px auto 0;
-}
-
-.footer_indent {
-  padding: 0;
-  margin: 0 auto;
 }
 </style>

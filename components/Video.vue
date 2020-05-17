@@ -1,45 +1,51 @@
 <template>
-  <div class="video-stories main__video-stories">
-    <h2 class="video-stories__title">
-      Истории людей, победивших рак, но не свои привычки
-    </h2>
-    <p class="video-stories__desription">
-      Есть вещи, которые не лечатся. Вещи ставшие частью нашего «я», фобии,
-      страхи. Но это точно не рак. Рак лечится. Лучшее доказательство — люди с
-      их историями.
-    </p>
-    <div class="arrow-btns">
-      <button
-        class="arrows-btns__btn arrows-btns__btn-left"
-        type="button"
-        disabled
-      ></button>
-      <button
-        class="arrows-btns__btn arrows-btns__btn-right arrows-btns__btn-right_active"
-        type="button"
-      ></button>
+  <Container>
+    <div class="video-stories">
+      <h2 class="video-stories__title">
+        Истории людей, победивших рак, но не свои привычки
+      </h2>
+      <p class="video-stories__desription">
+        Есть вещи, которые не лечатся. Вещи ставшие частью нашего «я», фобии,
+        страхи. Но это точно не рак. Рак лечится. Лучшее доказательство — люди с
+        их историями.
+      </p>
+      <div class="arrow-btns">
+        <button
+          class="arrows-btns__btn arrows-btns__btn-left"
+          type="button"
+          disabled
+        ></button>
+        <button
+          class="arrows-btns__btn arrows-btns__btn-right arrows-btns__btn-right_active"
+          type="button"
+        ></button>
+      </div>
+      <div class="video-stories__video">
+        <iframe class="video-stories__iframe" src="#" frameborder="0"></iframe>
+        <button class="video-stories__play-button" type="button"></button>
+      </div>
+      <p class="video-stories__caption">
+        Все видео вы можете найте на нашем
+        <a href="#" target="_blank" class="video-stories__caption"
+          >YouTube канале.</a
+        >
+      </p>
     </div>
-    <div class="video-stories__video">
-      <iframe class="video-stories__iframe" src="#" frameborder="0"></iframe>
-      <button class="video-stories__play-button" type="button"></button>
-    </div>
-    <p class="video-stories__caption">
-      Все видео вы можете найте на нашем
-      <a href="#" target="_blank" class="video-stories__caption"
-        >YouTube канале.</a
-      >
-    </p>
-  </div>
+  </Container>
 </template>
 
 <script>
-export default {};
+import Container from '@/components/Container';
+export default {
+  components: {
+    Container,
+  },
+};
 </script>
 
 <style scoped>
 .video-stories {
-  max-width: 1340px;
-  margin: 100px auto;
+  padding: 100px 0 74px;
   display: grid;
   grid-template-columns: minmax(0, 413px) minmax(0, 867px);
   grid-template-rows: repeat(4, auto);

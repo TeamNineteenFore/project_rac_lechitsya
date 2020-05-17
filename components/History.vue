@@ -1,6 +1,6 @@
 <template>
   <section class="history">
-    <div class="history__inner">
+    <Container>
       <Title>
         Расскажите свою историю
       </Title>
@@ -22,7 +22,7 @@
           <VioletButton class="history__button">Заполнить форму</VioletButton>
         </Description>
       </div>
-    </div>
+    </Container>
   </section>
 </template>
 
@@ -30,20 +30,21 @@
 import Title from '@/components/ui/Title';
 import Description from '@/components/ui/Description';
 import VioletButton from '@/components/ui/VioletButton';
+import Container from '@/components/Container';
 export default {
   components: {
-    Title: Title,
-    Description: Description,
-    VioletButton: VioletButton,
+    Title,
+    Description,
+    VioletButton,
+    Container,
   },
 };
 </script>
 
 <style scoped>
 .history {
-  max-width: 1440px;
   background-color: #f7f7f7;
-  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .history__inner {

@@ -1,25 +1,28 @@
 <template>
-  <header class="header">
-    <h1 class="header__logo">
-      Проект Благотворительного Фонда Константина Хабенского
-    </h1>
-    <div class="header__navigation">
-      <links />
-      <button class="header__button" type="button">
-        <nuxt-link to="/story" class="header__button"
-          >Рассказать историю</nuxt-link
-        >
-      </button>
-    </div>
-    <img class="header__menu" src="image/header-menu.svg" alt="меню" />
-  </header>
+  <Container>
+    <header class="header">
+      <h1 class="header__logo">
+        Проект Благотворительного Фонда Константина Хабенского
+      </h1>
+      <div class="header__navigation">
+        <Links />
+        <button class="header__button" type="button">
+          <nuxt-link to="/story" class="header__button"
+            >Рассказать историю</nuxt-link
+          >
+        </button>
+      </div>
+    </header>
+  </Container>
 </template>
 
 <script>
 import Links from '@/components/ui/Links';
+import Container from '@/components/Container';
 export default {
   components: {
-    links: Links,
+    Links,
+    Container,
   },
 };
 </script>
@@ -29,8 +32,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -40,7 +41,7 @@ export default {
   font-size: 16px;
   line-height: 20px;
   color: #121212;
-  padding: 18px 0 18px 60px;
+  padding: 18px 0;
 }
 
 .header__menu-links {
@@ -71,7 +72,6 @@ export default {
   cursor: pointer;
   font-size: 18px;
   line-height: 24px;
-  margin-right: 18px;
   color: #121212;
 }
 

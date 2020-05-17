@@ -1,5 +1,5 @@
 <template>
-  <div class="cover main__cover">
+  <div class="cover">
     <cover-video />
     <h2><hashtag class="cover__title">#РАКЛЕЧИТСЯ</hashtag></h2>
     <a href="#" class="cover__button"></a>

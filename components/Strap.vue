@@ -1,29 +1,30 @@
 <template>
   <section class="banner">
-    <h2 class="banner__text">
-      <slot>Текст по умолчанию</slot
-      ><hashtag class="banner__text_bold">#этонелечится</hashtag>
-    </h2>
+    <Container>
+      <h2 class="banner__text">
+        <slot>Текст по умолчанию</slot
+        ><hashtag class="banner__text_bold"> #этонелечится</hashtag>
+      </h2>
+    </Container>
   </section>
 </template>
 
 <script>
 import Hashtag from '@/components/ui/Hashtag';
-
+import Container from '@/components/Container';
 export default {
   components: {
     hashtag: Hashtag,
+    Container,
   },
 };
 </script>
 
 <style scoped>
 .banner {
-  max-width: 1320px;
   min-height: 86px;
-  margin: auto;
   background-color: #613a93;
-  display: flex;
+  text-align: center;
 }
 
 .banner__text {

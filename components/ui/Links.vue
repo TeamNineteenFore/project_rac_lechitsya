@@ -18,7 +18,7 @@ export default {};
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
-  margin-right: 18px;
+  margin-right: 40px;
   color: #121212;
 }
 
