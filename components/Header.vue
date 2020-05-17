@@ -5,11 +5,9 @@
         Проект Благотворительного Фонда Константина Хабенского
       </h1>
       <div class="header__navigation">
-        <Links />
+        <Menu />
         <button class="header__button" type="button">
-          <nuxt-link to="/story" class="header__button"
-            >Рассказать историю</nuxt-link
-          >
+          Рассказать историю
         </button>
       </div>
     </header>
@@ -21,7 +19,7 @@ import Links from '@/components/ui/Links';
 import Container from '@/components/Container';
 export default {
   components: {
-    Links,
+    Menu: Links,
     Container,
   },
 };
