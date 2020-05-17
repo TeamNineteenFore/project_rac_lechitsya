@@ -26,7 +26,7 @@
       </div>
       <p class="video-stories__caption">
         Все видео вы можете найте на нашем
-        <a href="#" target="_blank" class="video-stories__caption"
+        <a href="#" target="_blank" class="video-stories__link"
           >YouTube канале.</a
         >
       </p>
@@ -79,6 +79,7 @@ export default {
   position: relative;
   grid-area: video;
 }
+
 .video-stories__iframe {
   background-color: #ededed;
   margin: 0 0 10px 0;
@@ -89,7 +90,7 @@ export default {
 }
 
 .video-stories__play-button {
-  background-image: url('../src/image/video-button-play.png');
+  background-image: url('../assets/images/video-button-play.png');
   position: absolute;
   width: 90px;
   height: 90px;
@@ -104,7 +105,11 @@ export default {
   font-size: 12px;
   line-height: 16px;
   grid-area: caption;
-  color: black;
+  color: #666;
+}
+
+.video-stories__link {
+  color: #666;
 }
 
 .arrow-btns {
@@ -128,21 +133,21 @@ export default {
 }
 
 .arrows-btns__btn-right {
-  background-image: url('../src/image/arrow-right.svg');
+  background-image: url('../assets/images/arrow-right.svg');
   grid-area: button-right;
 }
 
 .arrows-btns__btn-left {
-  background-image: url('../src/image/arrow-left.svg');
+  background-image: url('../assets/images/arrow-left.svg');
   grid-area: button-left;
 }
 
 .arrows-btns__btn-right_active {
-  background-image: url('../src/image/arrow-right_active.svg');
+  background-image: url('../assets/images/arrow-right_active.svg');
 }
 
 .arrows-btns__btn-left_active {
-  background-image: url('../src/image/arrow-left_active.svg');
+  background-image: url('../assets/images/arrow-left_active.svg');
 }
 
 @media screen and (max-width: 1280px) {
